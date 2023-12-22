@@ -6,7 +6,7 @@
 /*   By: joya <joya@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 14:34:45 by ajoya-pi          #+#    #+#             */
-/*   Updated: 2023/10/18 13:59:43 by ajoya-pi         ###   ########.fr       */
+/*   Updated: 2023/12/22 10:04:00 by joya             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,32 +23,6 @@ static int	check(unsigned int nb)
 		i++;
 	}
 	return (i + 1);
-}
-
-static size_t	ft_strlen(const char *str)
-{
-	size_t	i;
-
-	i = 0;
-	while (str[i] != '\0')
-		i++;
-	return (i);
-}
-
-unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
-{
-	unsigned int	i;
-
-	i = 0;
-	if (size == 0)
-		return (ft_strlen(src));
-	while (src[i] != '\0' && i < (size - 1))
-	{
-		dest[i] = src[i];
-		i++;
-	}
-	dest[i] = '\0';
-	return (ft_strlen(src));
 }
 
 static char	*exceptions(unsigned int nb, int i, char *a)
